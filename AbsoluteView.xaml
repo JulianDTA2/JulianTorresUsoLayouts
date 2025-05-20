@@ -5,28 +5,23 @@
              Title="AbsoluteView">
     <AbsoluteLayout>
 
-        <!-- Ícono fijo en la parte superior -->
-        <Image Source="icono.png"
+        <Image Source="poke.png"
                AbsoluteLayout.LayoutBounds="0.5,0,100,100"
                AbsoluteLayout.LayoutFlags="PositionProportional"
                HorizontalOptions="Center" />
 
-        <!-- Scrollable content -->
         <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
                     AbsoluteLayout.LayoutFlags="All">
             <StackLayout Padding="20" Spacing="15">
-                <!-- Contenido de ejemplo -->
                 <Label Text="Contenido largo que necesita scroll"
                        FontSize="20"/>
-                <!-- Repite para simular scroll -->
                 <Label Text="Más contenido..." />
                 <BoxView HeightRequest="800" Color="Transparent"/>
             </StackLayout>
         </ScrollView>
-
-        <!-- Botón flotante en esquina inferior derecha -->
         <Button Text="Ir a Grid"
-                Clicked="OnButtonClicked"
+                x:Name="Regresar"
+                Clicked="Regresar_Clicked"
                 BackgroundColor="DeepSkyBlue"
                 TextColor="White"
                 CornerRadius="25"

@@ -6,4 +6,10 @@ public partial class AbsoluteView : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Regresar_Clicked(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new GridView());
+
+    }
 }
