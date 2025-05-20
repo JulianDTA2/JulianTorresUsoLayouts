@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JulianTorresUsoLayouts.StackView"
+             Title="StackView">
+    <StackLayout Orientation="Vertical" Spacing="100">
+        <Label 
+            Text="Julian"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="15"/>
+        <Label 
+            Text="Torres"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="12"/>
+        <Label 
+            Text="Lol pro player"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="9"/>
+        <Button 
+            x:Name="BotonIrAFlex"
+            Text="Ir a Flex Layout"
+            Clicked="BotonIrAFlex_Clicked"
+            />
+    </StackLayout>
+</ContentPage>
